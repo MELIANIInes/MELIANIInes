@@ -96,6 +96,9 @@ nav{
    background: #ffffff;
    border-color:#000000;
 }
+#btnlink{
+   text-decoration: none;
+}
 /* 
 ---------------------------about me section------------------------- */
 #about{
@@ -199,6 +202,7 @@ nav{
    border-radius: 10px;
    transition: all 0.5s;
    width: 500px;
+   height: 350px;
 }
 
 .projectCard img{
@@ -232,7 +236,26 @@ nav{
 .projectitem{
    transition:  1s;
 }
+/* logos */
+#hospitality{
+width: 170px;
+height: auto;
+padding-bottom: 20px;
+padding-top: 40px;
+}
+#HK{
+   width: 90px;
+   height: 110px;  
+}
+#MyRide{
+width: auto;
+height: 110px;
 
+}
+#Ansay{
+width: 140px;
+height: 110px;
+}
 .layer{
    width: 100%;
    height:  0;
@@ -283,12 +306,12 @@ nav{
 
 .contactdiv h1{
    font-size: 50px;
-   margin-bottom: 40px;
+   margin-bottom: 75px;
 }
 
 .contactdiv .cc{
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    width: 100%;
    align-items: center;
    text-align: center;
