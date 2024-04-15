@@ -37,7 +37,7 @@ for (let i = 0; i < tabLinks.length; i++) {
 };
 opentab();
 
-// ------------------ scroll animation-----------------------------
+// scroll animation 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -48,7 +48,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ------------------download CV----------------------------- 
+// download CV 
 document.querySelectorAll('.downloadCV').forEach(button => {
     button.addEventListener('click', function() {
         var cvUrl = ('./CV/Ines-MELIANI-Resume.pdf');
