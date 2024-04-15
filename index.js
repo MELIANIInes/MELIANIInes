@@ -37,7 +37,7 @@ for (let i = 0; i < tabLinks.length; i++) {
 };
 opentab();
 
-//------------------ scroll animation-----------------------------
+// ------------------ scroll animation-----------------------------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -48,10 +48,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-//------------------download CV----------------------------- 
+// ------------------download CV----------------------------- 
 document.querySelectorAll('.downloadCV').forEach(button => {
     button.addEventListener('click', function() {
-        var cvUrl = ('./CV/Ines-MELIANI-Resume.pdf'); // Construct the URL based on the data-file attribute
+        var cvUrl = ('./CV/Ines-MELIANI-Resume.pdf');
         var link = document.createElement('a');
         link.href = cvUrl;
         link.download =('Ines-MELIANI-Resume.pdf');
