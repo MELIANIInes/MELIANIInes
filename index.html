@@ -19,13 +19,13 @@
           <!-- <h1 id="logo">Ines</h1> cherche apres a faire comme akilal-->
           <img src="image/INESLOGO.png" alt="Ines" id="logo" />
           <ul>
-            <li><a href="" class="link">Home</a></li>
-            <li><a href="#" class="link">About Me</a></li>
+            <li><a href="#home" class="link">Home</a></li>
+            <li><a href="#about" class="link">About Me</a></li>
             <li><a href="#projects" class="link">My Projects</a></li>
             <li><a href="#contact" class="link">Contact</a></li>
           </ul>
         </nav>
-        <div class="header-text">
+        <div class="header-text" id="#home">
           <h1 id="intro">
             Hi There, <br />
             I'm <span id="multiText">Ines MELIANI</span>
@@ -35,8 +35,8 @@
             and more !
           </p>
           <div class="heroBtn">
-            <button class="btn CV primary">Dowland CV</button>
-            <button class="btn secondary">Find More</button>
+            <button class="btn primary downloadCV">Dowland CV</button>
+            <a href="#about" class="btn secondary" id="btnlink">Find More</a>
             <!-- or about me or contact me -->
           </div>
         </div>
@@ -51,7 +51,8 @@
               <img src="image/AGabout.png" alt="" />
             </div>
             <div class="meInfo">
-              <h1>About Me</h1>
+              <h1 class="yellow">About Me</h1>
+
               <div class="tabTitles">
                 <p class="link abtLink activeLink">Personal information</p>
                 <p class="link abtLink">Experience</p>
@@ -157,6 +158,8 @@
               </div>
               
                 </ul>
+                <button class="btn primary downloadCV">Dowland CV</button>
+
               </div>
             </div>
           </div>
@@ -176,28 +179,24 @@
 
               <div class="projectCard">
                 <img
-                  class="projectitem"
+                  class="projectitem" id="MyRide"
                   alt="svgImg"
-                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik00Mi40NDQsMTAuMzg1bC04LjgxOS00LjE0QzMzLjYsNi4yMzMsMzMuNTczLDYuMjMsMzMuNTQ3LDYuMjIxYy0wLjAxMi0wLjAwNS0wLjAyMS0wLjAxNC0wLjAzMy0wLjAxOQljLTAuMDI5LTAuMDExLTAuMDU5LTAuMDA5LTAuMDg4LTAuMDE5Yy0wLjAzMS0wLjAwNy0wLjA2Mi0wLjAxNi0wLjA5My0wLjAyYy0wLjg1NC0wLjI0OC0xLjc1OS0wLjAxLTIuMzM5LDAuNjQ4TDE4LjAxNCwxOS43NDgJbC03LjQ3OC01LjA5M2MtMC45NzktMC44MjYtMi4zNzctMC45MzgtMy40ODYtMC4yNzFsLTMuMTU5LDEuOTQ5Yy0wLjAxMiwwLjAwNy0wLjAxOCwwLjAyMS0wLjAyOSwwLjAyOUMzLjMyOSwxNi43MjgsMywxNy4zMjIsMywxOAl2MTZjMCwwLjY3OCwwLjMyOSwxLjI3MiwwLjg2MSwxLjYzN2MwLjAxMiwwLjAwOCwwLjAxNywwLjAyMSwwLjAyOSwwLjAyOWwzLjE2OSwxLjk1NmMwLjQ3OSwwLjI4OCwxLjAxNiwwLjQyOSwxLjU0OCwwLjQyOQljMC42ODgsMCwxLjM3LTAuMjM1LDEuOTE3LTAuNjk1bDcuNDktNS4xMDJsMTIuOTYsMTIuOTE3YzAuNDQ4LDAuNTA4LDEuMDcyLDAuNzgxLDEuNzE3LDAuNzgxYzAuMjc0LDAsMC41NTMtMC4wNSwwLjgyMi0wLjE1MgljMC4wMjEtMC4wMDgsMC4wMzYtMC4wMjMsMC4wNTctMC4wMzJjMC4wMTgtMC4wMDcsMC4wMzctMC4wMDQsMC4wNTUtMC4wMTJsOC43MjgtNC4xMDJDNDMuOTM2LDQxLjA5NSw0NSwzOS41ODIsNDUsMzcuODlWMTQuMTEJQzQ1LDEyLjQxOCw0My45MzYsMTAuOTA1LDQyLjQ0NCwxMC4zODV6IE0yNS42ODgsMjYuMDAxTDMzLDIxLjA0M3Y5LjkxNUwyNS42ODgsMjYuMDAxeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik05LDE5LjEzdjkuNzRsLTMuMiwzLjc0QzUuMjIsMzMuMzcsNCwzMi45Niw0LDMyVjE2YzAtMC45NiwxLjIyLTEuMzcsMS44LTAuNjFMOSwxOS4xM3oiPjwvcGF0aD48cGF0aCBkPSJNNS4wMjUsMzQuMDA4Yy0wLjIxOSwwLTAuNDQzLTAuMDM2LTAuNjYzLTAuMTFDMy41MzQsMzMuNjE3LDMsMzIuODczLDMsMzJWMTZjMC0wLjg3MywwLjUzNC0xLjYxNywxLjM2Mi0xLjg5NwljMC44MjgtMC4yNzksMS43MDQtMC4wMTIsMi4yMzIsMC42ODFsMy4xNjUsMy42OTZDOS45MTUsMTguNjYxLDEwLDE4Ljg5MiwxMCwxOS4xM3Y5Ljc0YzAsMC4yMzgtMC4wODUsMC40NjktMC4yNCwwLjY1bC0zLjIsMy43NAlDNi4xOTcsMzMuNzM3LDUuNjI5LDM0LjAwOCw1LjAyNSwzNC4wMDh6IE01LjA0LDE2LjA0TDUsMzJsMy0zLjV2LTkuMDAxTDUuMDQsMTYuMDR6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQuNDE2LDMyLjgxNWwzLjE1OSwxLjk1YzAuNzMzLDAuNDQsMS42NjQsMC4zNjUsMi4zMTgtMC4xODVMMzQsMTYuOTM4VjYuMzUzCWMwLTEuMTk4LTEuNDgyLTEuNzU4LTIuMjc1LTAuODZMNC40MTYsMzIuODE1eiI+PC9wYXRoPjxwYXRoIGQ9Ik04LjYxOSwzNi4wNTRjLTAuNTM0LDAtMS4wNzUtMC4xNDItMS41Ni0wLjQzMmwtMy4xNjktMS45NTZjLTAuMjYtMC4xNi0wLjQzMy0wLjQzMS0wLjQ2OC0wLjczNHMwLjA2OS0wLjYwNiwwLjI4Ni0wLjgyMwlMMzEuMDE4LDQuNzg2YzAuNTk2LTAuNjgsMS41OTEtMC45MjcsMi40OTYtMC41ODRDMzQuNDE3LDQuNTQzLDM1LDUuMzg4LDM1LDYuMzUzdjEwLjU4NmMwLDAuMzE5LTAuMTUyLDAuNjE5LTAuNDA5LDAuODA3CUwxMC40ODMsMzUuMzg3QzkuOTY0LDM1LjgyNiw5LjI5OCwzNi4wNTQsOC42MTksMzYuMDU0eiBNNi4wMTcsMzIuNjI4bDIuMDg0LDEuMjg2YzAuMzU0LDAuMjEzLDAuODIsMC4xNzYsMS4xNDgtMC4wOTlMMzMsMTYuNDMyCVY2LjM1M2MwLTAuMTcxLTAuMTA1LTAuMjQ3LTAuMTkzLTAuMjhjLTAuMDg5LTAuMDMzLTAuMjE4LTAuMDQ3LTAuMzMyLDAuMDgzTDYuMDE3LDMyLjYyOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNC40MTYsMTUuMTg1bDMuMTU5LTEuOTVjMC43MzMtMC40NCwxLjY2NC0wLjM2NSwyLjMxOCwwLjE4NUwzNCwzMS4wNjN2MTAuNTg1CWMwLDEuMTk4LTEuNDgyLDEuNzU4LTIuMjc1LDAuODZMNC40MTYsMTUuMTg1eiI+PC9wYXRoPjxwYXRoIGQ9Ik0zMi42OTEsNDMuOTUxYy0wLjY0NSwwLTEuMjY5LTAuMjczLTEuNzE3LTAuNzgxTDMuNzA5LDE1Ljg5MmMtMC4yMTctMC4yMTctMC4zMjEtMC41Mi0wLjI4Ni0wLjgyMwlzMC4yMDgtMC41NzQsMC40NjgtMC43MzRsMy4xNTktMS45NDljMS4xMDktMC42NjcsMi41MDctMC41NTUsMy40ODYsMC4yNzFsMjQuMDU1LDE3LjYwMkMzNC44NDgsMzAuNDQ1LDM1LDMwLjc0NCwzNSwzMS4wNjN2MTAuNTg1CWMwLDAuOTY1LTAuNTgzLDEuODEtMS40ODYsMi4xNUMzMy4yNDQsNDMuOTAxLDMyLjk2Niw0My45NTEsMzIuNjkxLDQzLjk1MXogTTYuMDE3LDE1LjM3MmwyNi40MTUsMjYuNDI5CWMwLjE1OCwwLjE3NiwwLjI4OSwwLjE2MywwLjM3NSwwLjEyOEMzMi44OTUsNDEuODk2LDMzLDQxLjgxOSwzMyw0MS42NDhWMzEuNTcxTDkuMzAyLDE0LjIyN2MtMC4zOC0wLjMxNS0wLjg0NS0wLjM1NC0xLjIxMS0wLjEzNAlMNi4wMTcsMTUuMzcyeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik00NCwxMi4xMXYyMy43OGMwLDEuMjctMC43OSwyLjQtMS45OCwyLjgybC04LjgyLDQuMTRMMzQsMzJjMCwwLDAtMTEuNSwwLTE2CWMwLTUtMC44LTEwLjg1LTAuOC0xMC44NWw4LjgyLDQuMTRDNDMuMjEsOS43MSw0NCwxMC44NCw0NCwxMi4xMXoiPjwvcGF0aD48cGF0aCBkPSJNMzMuMiw0My44NWMtMC4yMTQsMC0wLjQyNy0wLjA2OC0wLjYwNC0wLjIwMmMtMC4yOTYtMC4yMjUtMC40NDMtMC41OTQtMC4zODMtMC45NkMzMi4yMjIsNDIuNjQsMzMsMzcuODQxLDMzLDMyVjE2CWMwLTUuODUxLTAuNzc4LTEwLjY0LTAuNzg2LTEwLjY4N2MtMC4wNjEtMC4zNjcsMC4wODctMC43MzYsMC4zODMtMC45NjFjMC4yOTctMC4yMjUsMC42OTItMC4yNjUsMS4wMjgtMC4xMDdsOC44MTksNC4xNAlDNDMuOTM2LDguOTA1LDQ1LDEwLjQxOCw0NSwxMi4xMVYzNS44OWMwLDEuNjkyLTEuMDY0LDMuMjA1LTIuNjQ3LDMuNzY0bC04LjcyOCw0LjEwMkMzMy40OSw0My44MTgsMzMuMzQ1LDQzLjg1LDMzLjIsNDMuODV6IE0zNC40NDIsNi44MzdDMzQuNjgxLDguODA0LDM1LDEyLjE1MywzNSwxNnYxNmMwLDMuODQ2LTAuMzE5LDcuMTk1LTAuNTU4LDkuMTYybDcuMTUyLTMuMzU3QzQyLjQ3MywzNy40OSw0MywzNi43MzUsNDMsMzUuODkJVjEyLjExYzAtMC44NDYtMC41MjctMS42MDEtMS4zMTMtMS44NzdMMzQuNDQyLDYuODM3eiI+PC9wYXRoPgo8L3N2Zz4="
+                  src="./image/MyRideLogo.svg"
                 />
                 <h3 class="projectitem">My Ride</h3>
                 <p class="projectitem">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Velit voluptas quia laborum ea, deserunt commodi sed?
+                  My Ride provides a convenient mobile app solution to address common issues with traditional public transport, such as bus delays or deviations. Through real-time...
                 </p>
 
                 <!-- layer  -->
                 <div class="layer">
                   <h3>My Ride</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci veniam cupiditate dolorum impedit? Quidem saepe
-                    maiores, cupiditate ea id quia, earum libero inventore vero
-                    placeat delectus ipsum omnis ipsa quos.
+                    My Ride provides a convenient mobile app solution to address common issues with traditional public transport, such as bus delays or deviations. Through real-time bus localization signals, passengers can report any issues directly to the responsible authorities, enabling efficient tracking and resolution. With a simple download of the app, drivers can stay connected to their local bus station, streamlining communication and enhancing service reliability without the need for costly hardware installations.
                   </p>
                   <a href="">
                     <img
-                      alt="svgImg"
+                      alt="svgImg" 
                       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmN2IzNTMiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoMTAuNjY2NjcsMTAuNjY2NjcpIj48cGF0aCBkPSJNMTkuOTgwNDcsMi45OTAyM2MtMC4wMzcyNiwwLjAwMTE4IC0wLjA3NDQzLDAuMDA0NDQgLTAuMTExMzMsMC4wMDk3N2gtNC44NjkxNGMtMC4zNjA2NCwtMC4wMDUxIC0wLjY5NjA4LDAuMTg0MzggLTAuODc3ODksMC40OTU4N2MtMC4xODE4MSwwLjMxMTUgLTAuMTgxODEsMC42OTY3NiAwLDEuMDA4MjVjMC4xODE4MSwwLjMxMTUgMC41MTcyNSwwLjUwMDk3IDAuODc3ODksMC40OTU4N2gyLjU4NTk0bC05LjI5Mjk3LDkuMjkyOTdjLTAuMjYxMjQsMC4yNTA4MiAtMC4zNjY0NywwLjYyMzI3IC0wLjI3NTExLDAuOTczNzFjMC4wOTEzNiwwLjM1MDQ0IDAuMzY1MDMsMC42MjQxMSAwLjcxNTQ3LDAuNzE1NDdjMC4zNTA0NCwwLjA5MTM2IDAuNzIyODksLTAuMDEzODggMC45NzM3MSwtMC4yNzUxMWw5LjI5Mjk3LC05LjI5Mjk3djIuNTg1OTRjLTAuMDA1MSwwLjM2MDY0IDAuMTg0MzgsMC42OTYwOCAwLjQ5NTg3LDAuODc3ODljMC4zMTE1LDAuMTgxODEgMC42OTY3NiwwLjE4MTgxIDEuMDA4MjUsMGMwLjMxMTUsLTAuMTgxODEgMC41MDA5NywtMC41MTcyNSAwLjQ5NTg3LC0wLjg3Nzg5di00Ljg3MzA1YzAuMDQwMzEsLTAuMjkxNDEgLTAuMDQ5NzMsLTAuNTg1NzkgLTAuMjQ2MTUsLTAuODA0NzljLTAuMTk2NDMsLTAuMjE5IC0wLjQ3OTMxLC0wLjM0MDQyIC0wLjc3MzM4LC0wLjMzMTkyek01LDNjLTEuMDkzMDYsMCAtMiwwLjkwNjk0IC0yLDJ2MTRjMCwxLjA5MzA2IDAuOTA2OTQsMiAyLDJoMTRjMS4wOTMwNiwwIDIsLTAuOTA2OTQgMiwtMnYtNmMwLjAwNTEsLTAuMzYwNjQgLTAuMTg0MzgsLTAuNjk2MDggLTAuNDk1ODcsLTAuODc3ODljLTAuMzExNSwtMC4xODE4MSAtMC42OTY3NiwtMC4xODE4MSAtMS4wMDgyNSwwYy0wLjMxMTUsMC4xODE4MSAtMC41MDA5NywwLjUxNzI1IC0wLjQ5NTg3LDAuODc3ODl2NmgtMTR2LTE0aDZjMC4zNjA2NCwwLjAwNTEgMC42OTYwOCwtMC4xODQzOCAwLjg3Nzg5LC0wLjQ5NTg3YzAuMTgxODEsLTAuMzExNSAwLjE4MTgxLC0wLjY5Njc2IDAsLTEuMDA4MjVjLTAuMTgxODEsLTAuMzExNSAtMC41MTcyNSwtMC41MDA5NyAtMC44Nzc4OSwtMC40OTU4N3oiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4="
                     />
                   </a>
@@ -208,24 +207,20 @@
 
               <div class="projectCard">
                 <img
-                  class="projectitem"
+                  class="projectitem" id="Ansay"
                   alt="svgImg"
-                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik00Mi40NDQsMTAuMzg1bC04LjgxOS00LjE0QzMzLjYsNi4yMzMsMzMuNTczLDYuMjMsMzMuNTQ3LDYuMjIxYy0wLjAxMi0wLjAwNS0wLjAyMS0wLjAxNC0wLjAzMy0wLjAxOQljLTAuMDI5LTAuMDExLTAuMDU5LTAuMDA5LTAuMDg4LTAuMDE5Yy0wLjAzMS0wLjAwNy0wLjA2Mi0wLjAxNi0wLjA5My0wLjAyYy0wLjg1NC0wLjI0OC0xLjc1OS0wLjAxLTIuMzM5LDAuNjQ4TDE4LjAxNCwxOS43NDgJbC03LjQ3OC01LjA5M2MtMC45NzktMC44MjYtMi4zNzctMC45MzgtMy40ODYtMC4yNzFsLTMuMTU5LDEuOTQ5Yy0wLjAxMiwwLjAwNy0wLjAxOCwwLjAyMS0wLjAyOSwwLjAyOUMzLjMyOSwxNi43MjgsMywxNy4zMjIsMywxOAl2MTZjMCwwLjY3OCwwLjMyOSwxLjI3MiwwLjg2MSwxLjYzN2MwLjAxMiwwLjAwOCwwLjAxNywwLjAyMSwwLjAyOSwwLjAyOWwzLjE2OSwxLjk1NmMwLjQ3OSwwLjI4OCwxLjAxNiwwLjQyOSwxLjU0OCwwLjQyOQljMC42ODgsMCwxLjM3LTAuMjM1LDEuOTE3LTAuNjk1bDcuNDktNS4xMDJsMTIuOTYsMTIuOTE3YzAuNDQ4LDAuNTA4LDEuMDcyLDAuNzgxLDEuNzE3LDAuNzgxYzAuMjc0LDAsMC41NTMtMC4wNSwwLjgyMi0wLjE1MgljMC4wMjEtMC4wMDgsMC4wMzYtMC4wMjMsMC4wNTctMC4wMzJjMC4wMTgtMC4wMDcsMC4wMzctMC4wMDQsMC4wNTUtMC4wMTJsOC43MjgtNC4xMDJDNDMuOTM2LDQxLjA5NSw0NSwzOS41ODIsNDUsMzcuODlWMTQuMTEJQzQ1LDEyLjQxOCw0My45MzYsMTAuOTA1LDQyLjQ0NCwxMC4zODV6IE0yNS42ODgsMjYuMDAxTDMzLDIxLjA0M3Y5LjkxNUwyNS42ODgsMjYuMDAxeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik05LDE5LjEzdjkuNzRsLTMuMiwzLjc0QzUuMjIsMzMuMzcsNCwzMi45Niw0LDMyVjE2YzAtMC45NiwxLjIyLTEuMzcsMS44LTAuNjFMOSwxOS4xM3oiPjwvcGF0aD48cGF0aCBkPSJNNS4wMjUsMzQuMDA4Yy0wLjIxOSwwLTAuNDQzLTAuMDM2LTAuNjYzLTAuMTFDMy41MzQsMzMuNjE3LDMsMzIuODczLDMsMzJWMTZjMC0wLjg3MywwLjUzNC0xLjYxNywxLjM2Mi0xLjg5NwljMC44MjgtMC4yNzksMS43MDQtMC4wMTIsMi4yMzIsMC42ODFsMy4xNjUsMy42OTZDOS45MTUsMTguNjYxLDEwLDE4Ljg5MiwxMCwxOS4xM3Y5Ljc0YzAsMC4yMzgtMC4wODUsMC40NjktMC4yNCwwLjY1bC0zLjIsMy43NAlDNi4xOTcsMzMuNzM3LDUuNjI5LDM0LjAwOCw1LjAyNSwzNC4wMDh6IE01LjA0LDE2LjA0TDUsMzJsMy0zLjV2LTkuMDAxTDUuMDQsMTYuMDR6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQuNDE2LDMyLjgxNWwzLjE1OSwxLjk1YzAuNzMzLDAuNDQsMS42NjQsMC4zNjUsMi4zMTgtMC4xODVMMzQsMTYuOTM4VjYuMzUzCWMwLTEuMTk4LTEuNDgyLTEuNzU4LTIuMjc1LTAuODZMNC40MTYsMzIuODE1eiI+PC9wYXRoPjxwYXRoIGQ9Ik04LjYxOSwzNi4wNTRjLTAuNTM0LDAtMS4wNzUtMC4xNDItMS41Ni0wLjQzMmwtMy4xNjktMS45NTZjLTAuMjYtMC4xNi0wLjQzMy0wLjQzMS0wLjQ2OC0wLjczNHMwLjA2OS0wLjYwNiwwLjI4Ni0wLjgyMwlMMzEuMDE4LDQuNzg2YzAuNTk2LTAuNjgsMS41OTEtMC45MjcsMi40OTYtMC41ODRDMzQuNDE3LDQuNTQzLDM1LDUuMzg4LDM1LDYuMzUzdjEwLjU4NmMwLDAuMzE5LTAuMTUyLDAuNjE5LTAuNDA5LDAuODA3CUwxMC40ODMsMzUuMzg3QzkuOTY0LDM1LjgyNiw5LjI5OCwzNi4wNTQsOC42MTksMzYuMDU0eiBNNi4wMTcsMzIuNjI4bDIuMDg0LDEuMjg2YzAuMzU0LDAuMjEzLDAuODIsMC4xNzYsMS4xNDgtMC4wOTlMMzMsMTYuNDMyCVY2LjM1M2MwLTAuMTcxLTAuMTA1LTAuMjQ3LTAuMTkzLTAuMjhjLTAuMDg5LTAuMDMzLTAuMjE4LTAuMDQ3LTAuMzMyLDAuMDgzTDYuMDE3LDMyLjYyOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNC40MTYsMTUuMTg1bDMuMTU5LTEuOTVjMC43MzMtMC40NCwxLjY2NC0wLjM2NSwyLjMxOCwwLjE4NUwzNCwzMS4wNjN2MTAuNTg1CWMwLDEuMTk4LTEuNDgyLDEuNzU4LTIuMjc1LDAuODZMNC40MTYsMTUuMTg1eiI+PC9wYXRoPjxwYXRoIGQ9Ik0zMi42OTEsNDMuOTUxYy0wLjY0NSwwLTEuMjY5LTAuMjczLTEuNzE3LTAuNzgxTDMuNzA5LDE1Ljg5MmMtMC4yMTctMC4yMTctMC4zMjEtMC41Mi0wLjI4Ni0wLjgyMwlzMC4yMDgtMC41NzQsMC40NjgtMC43MzRsMy4xNTktMS45NDljMS4xMDktMC42NjcsMi41MDctMC41NTUsMy40ODYsMC4yNzFsMjQuMDU1LDE3LjYwMkMzNC44NDgsMzAuNDQ1LDM1LDMwLjc0NCwzNSwzMS4wNjN2MTAuNTg1CWMwLDAuOTY1LTAuNTgzLDEuODEtMS40ODYsMi4xNUMzMy4yNDQsNDMuOTAxLDMyLjk2Niw0My45NTEsMzIuNjkxLDQzLjk1MXogTTYuMDE3LDE1LjM3MmwyNi40MTUsMjYuNDI5CWMwLjE1OCwwLjE3NiwwLjI4OSwwLjE2MywwLjM3NSwwLjEyOEMzMi44OTUsNDEuODk2LDMzLDQxLjgxOSwzMyw0MS42NDhWMzEuNTcxTDkuMzAyLDE0LjIyN2MtMC4zOC0wLjMxNS0wLjg0NS0wLjM1NC0xLjIxMS0wLjEzNAlMNi4wMTcsMTUuMzcyeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik00NCwxMi4xMXYyMy43OGMwLDEuMjctMC43OSwyLjQtMS45OCwyLjgybC04LjgyLDQuMTRMMzQsMzJjMCwwLDAtMTEuNSwwLTE2CWMwLTUtMC44LTEwLjg1LTAuOC0xMC44NWw4LjgyLDQuMTRDNDMuMjEsOS43MSw0NCwxMC44NCw0NCwxMi4xMXoiPjwvcGF0aD48cGF0aCBkPSJNMzMuMiw0My44NWMtMC4yMTQsMC0wLjQyNy0wLjA2OC0wLjYwNC0wLjIwMmMtMC4yOTYtMC4yMjUtMC40NDMtMC41OTQtMC4zODMtMC45NkMzMi4yMjIsNDIuNjQsMzMsMzcuODQxLDMzLDMyVjE2CWMwLTUuODUxLTAuNzc4LTEwLjY0LTAuNzg2LTEwLjY4N2MtMC4wNjEtMC4zNjcsMC4wODctMC43MzYsMC4zODMtMC45NjFjMC4yOTctMC4yMjUsMC42OTItMC4yNjUsMS4wMjgtMC4xMDdsOC44MTksNC4xNAlDNDMuOTM2LDguOTA1LDQ1LDEwLjQxOCw0NSwxMi4xMVYzNS44OWMwLDEuNjkyLTEuMDY0LDMuMjA1LTIuNjQ3LDMuNzY0bC04LjcyOCw0LjEwMkMzMy40OSw0My44MTgsMzMuMzQ1LDQzLjg1LDMzLjIsNDMuODV6IE0zNC40NDIsNi44MzdDMzQuNjgxLDguODA0LDM1LDEyLjE1MywzNSwxNnYxNmMwLDMuODQ2LTAuMzE5LDcuMTk1LTAuNTU4LDkuMTYybDcuMTUyLTMuMzU3QzQyLjQ3MywzNy40OSw0MywzNi43MzUsNDMsMzUuODkJVjEyLjExYzAtMC44NDYtMC41MjctMS42MDEtMS4zMTMtMS44NzdMMzQuNDQyLDYuODM3eiI+PC9wYXRoPgo8L3N2Zz4="
+                  src="./image/AnsayLogo.svg"
                 />
                 <h3 class="projectitem">Ansay</h3>
                 <p class="projectitem">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Velit voluptas quia laborum ea, deserunt commodi sed?
+                  An online platform that bridges the gap between tradition and youth, uniting every cultural occasion with those who may not have access or awareness of it...
                 </p>
 
                 <!-- layer  -->
                 <div class="layer">
                   <h3>Ansay</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci veniam cupiditate dolorum impedit? Quidem saepe
-                    maiores, cupiditate ea id quia, earum libero inventore vero
-                    placeat delectus ipsum omnis ipsa quos.
+                   An online platform that bridges the gap between tradition and youth, uniting every cultural occasion with those who may not have access or awareness of it. Featuring a dedicated marketplace for traditional businesses and interactive quizzes and games set in a homeland village environment, each occasion becomes a unique level of engagement, fostering connection and celebration across generations.
                   </p>
                   <a href="">
                     <img
@@ -244,24 +239,20 @@
             <div class="projectlist">
               <div class="projectCard">
                 <img
-                  class="projectitem"
+                  class="projectitem" id="HK"
                   alt="svgImg"
-                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik00Mi40NDQsMTAuMzg1bC04LjgxOS00LjE0QzMzLjYsNi4yMzMsMzMuNTczLDYuMjMsMzMuNTQ3LDYuMjIxYy0wLjAxMi0wLjAwNS0wLjAyMS0wLjAxNC0wLjAzMy0wLjAxOQljLTAuMDI5LTAuMDExLTAuMDU5LTAuMDA5LTAuMDg4LTAuMDE5Yy0wLjAzMS0wLjAwNy0wLjA2Mi0wLjAxNi0wLjA5My0wLjAyYy0wLjg1NC0wLjI0OC0xLjc1OS0wLjAxLTIuMzM5LDAuNjQ4TDE4LjAxNCwxOS43NDgJbC03LjQ3OC01LjA5M2MtMC45NzktMC44MjYtMi4zNzctMC45MzgtMy40ODYtMC4yNzFsLTMuMTU5LDEuOTQ5Yy0wLjAxMiwwLjAwNy0wLjAxOCwwLjAyMS0wLjAyOSwwLjAyOUMzLjMyOSwxNi43MjgsMywxNy4zMjIsMywxOAl2MTZjMCwwLjY3OCwwLjMyOSwxLjI3MiwwLjg2MSwxLjYzN2MwLjAxMiwwLjAwOCwwLjAxNywwLjAyMSwwLjAyOSwwLjAyOWwzLjE2OSwxLjk1NmMwLjQ3OSwwLjI4OCwxLjAxNiwwLjQyOSwxLjU0OCwwLjQyOQljMC42ODgsMCwxLjM3LTAuMjM1LDEuOTE3LTAuNjk1bDcuNDktNS4xMDJsMTIuOTYsMTIuOTE3YzAuNDQ4LDAuNTA4LDEuMDcyLDAuNzgxLDEuNzE3LDAuNzgxYzAuMjc0LDAsMC41NTMtMC4wNSwwLjgyMi0wLjE1MgljMC4wMjEtMC4wMDgsMC4wMzYtMC4wMjMsMC4wNTctMC4wMzJjMC4wMTgtMC4wMDcsMC4wMzctMC4wMDQsMC4wNTUtMC4wMTJsOC43MjgtNC4xMDJDNDMuOTM2LDQxLjA5NSw0NSwzOS41ODIsNDUsMzcuODlWMTQuMTEJQzQ1LDEyLjQxOCw0My45MzYsMTAuOTA1LDQyLjQ0NCwxMC4zODV6IE0yNS42ODgsMjYuMDAxTDMzLDIxLjA0M3Y5LjkxNUwyNS42ODgsMjYuMDAxeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik05LDE5LjEzdjkuNzRsLTMuMiwzLjc0QzUuMjIsMzMuMzcsNCwzMi45Niw0LDMyVjE2YzAtMC45NiwxLjIyLTEuMzcsMS44LTAuNjFMOSwxOS4xM3oiPjwvcGF0aD48cGF0aCBkPSJNNS4wMjUsMzQuMDA4Yy0wLjIxOSwwLTAuNDQzLTAuMDM2LTAuNjYzLTAuMTFDMy41MzQsMzMuNjE3LDMsMzIuODczLDMsMzJWMTZjMC0wLjg3MywwLjUzNC0xLjYxNywxLjM2Mi0xLjg5NwljMC44MjgtMC4yNzksMS43MDQtMC4wMTIsMi4yMzIsMC42ODFsMy4xNjUsMy42OTZDOS45MTUsMTguNjYxLDEwLDE4Ljg5MiwxMCwxOS4xM3Y5Ljc0YzAsMC4yMzgtMC4wODUsMC40NjktMC4yNCwwLjY1bC0zLjIsMy43NAlDNi4xOTcsMzMuNzM3LDUuNjI5LDM0LjAwOCw1LjAyNSwzNC4wMDh6IE01LjA0LDE2LjA0TDUsMzJsMy0zLjV2LTkuMDAxTDUuMDQsMTYuMDR6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQuNDE2LDMyLjgxNWwzLjE1OSwxLjk1YzAuNzMzLDAuNDQsMS42NjQsMC4zNjUsMi4zMTgtMC4xODVMMzQsMTYuOTM4VjYuMzUzCWMwLTEuMTk4LTEuNDgyLTEuNzU4LTIuMjc1LTAuODZMNC40MTYsMzIuODE1eiI+PC9wYXRoPjxwYXRoIGQ9Ik04LjYxOSwzNi4wNTRjLTAuNTM0LDAtMS4wNzUtMC4xNDItMS41Ni0wLjQzMmwtMy4xNjktMS45NTZjLTAuMjYtMC4xNi0wLjQzMy0wLjQzMS0wLjQ2OC0wLjczNHMwLjA2OS0wLjYwNiwwLjI4Ni0wLjgyMwlMMzEuMDE4LDQuNzg2YzAuNTk2LTAuNjgsMS41OTEtMC45MjcsMi40OTYtMC41ODRDMzQuNDE3LDQuNTQzLDM1LDUuMzg4LDM1LDYuMzUzdjEwLjU4NmMwLDAuMzE5LTAuMTUyLDAuNjE5LTAuNDA5LDAuODA3CUwxMC40ODMsMzUuMzg3QzkuOTY0LDM1LjgyNiw5LjI5OCwzNi4wNTQsOC42MTksMzYuMDU0eiBNNi4wMTcsMzIuNjI4bDIuMDg0LDEuMjg2YzAuMzU0LDAuMjEzLDAuODIsMC4xNzYsMS4xNDgtMC4wOTlMMzMsMTYuNDMyCVY2LjM1M2MwLTAuMTcxLTAuMTA1LTAuMjQ3LTAuMTkzLTAuMjhjLTAuMDg5LTAuMDMzLTAuMjE4LTAuMDQ3LTAuMzMyLDAuMDgzTDYuMDE3LDMyLjYyOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNC40MTYsMTUuMTg1bDMuMTU5LTEuOTVjMC43MzMtMC40NCwxLjY2NC0wLjM2NSwyLjMxOCwwLjE4NUwzNCwzMS4wNjN2MTAuNTg1CWMwLDEuMTk4LTEuNDgyLDEuNzU4LTIuMjc1LDAuODZMNC40MTYsMTUuMTg1eiI+PC9wYXRoPjxwYXRoIGQ9Ik0zMi42OTEsNDMuOTUxYy0wLjY0NSwwLTEuMjY5LTAuMjczLTEuNzE3LTAuNzgxTDMuNzA5LDE1Ljg5MmMtMC4yMTctMC4yMTctMC4zMjEtMC41Mi0wLjI4Ni0wLjgyMwlzMC4yMDgtMC41NzQsMC40NjgtMC43MzRsMy4xNTktMS45NDljMS4xMDktMC42NjcsMi41MDctMC41NTUsMy40ODYsMC4yNzFsMjQuMDU1LDE3LjYwMkMzNC44NDgsMzAuNDQ1LDM1LDMwLjc0NCwzNSwzMS4wNjN2MTAuNTg1CWMwLDAuOTY1LTAuNTgzLDEuODEtMS40ODYsMi4xNUMzMy4yNDQsNDMuOTAxLDMyLjk2Niw0My45NTEsMzIuNjkxLDQzLjk1MXogTTYuMDE3LDE1LjM3MmwyNi40MTUsMjYuNDI5CWMwLjE1OCwwLjE3NiwwLjI4OSwwLjE2MywwLjM3NSwwLjEyOEMzMi44OTUsNDEuODk2LDMzLDQxLjgxOSwzMyw0MS42NDhWMzEuNTcxTDkuMzAyLDE0LjIyN2MtMC4zOC0wLjMxNS0wLjg0NS0wLjM1NC0xLjIxMS0wLjEzNAlMNi4wMTcsMTUuMzcyeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik00NCwxMi4xMXYyMy43OGMwLDEuMjctMC43OSwyLjQtMS45OCwyLjgybC04LjgyLDQuMTRMMzQsMzJjMCwwLDAtMTEuNSwwLTE2CWMwLTUtMC44LTEwLjg1LTAuOC0xMC44NWw4LjgyLDQuMTRDNDMuMjEsOS43MSw0NCwxMC44NCw0NCwxMi4xMXoiPjwvcGF0aD48cGF0aCBkPSJNMzMuMiw0My44NWMtMC4yMTQsMC0wLjQyNy0wLjA2OC0wLjYwNC0wLjIwMmMtMC4yOTYtMC4yMjUtMC40NDMtMC41OTQtMC4zODMtMC45NkMzMi4yMjIsNDIuNjQsMzMsMzcuODQxLDMzLDMyVjE2CWMwLTUuODUxLTAuNzc4LTEwLjY0LTAuNzg2LTEwLjY4N2MtMC4wNjEtMC4zNjcsMC4wODctMC43MzYsMC4zODMtMC45NjFjMC4yOTctMC4yMjUsMC42OTItMC4yNjUsMS4wMjgtMC4xMDdsOC44MTksNC4xNAlDNDMuOTM2LDguOTA1LDQ1LDEwLjQxOCw0NSwxMi4xMVYzNS44OWMwLDEuNjkyLTEuMDY0LDMuMjA1LTIuNjQ3LDMuNzY0bC04LjcyOCw0LjEwMkMzMy40OSw0My44MTgsMzMuMzQ1LDQzLjg1LDMzLjIsNDMuODV6IE0zNC40NDIsNi44MzdDMzQuNjgxLDguODA0LDM1LDEyLjE1MywzNSwxNnYxNmMwLDMuODQ2LTAuMzE5LDcuMTk1LTAuNTU4LDkuMTYybDcuMTUyLTMuMzU3QzQyLjQ3MywzNy40OSw0MywzNi43MzUsNDMsMzUuODkJVjEyLjExYzAtMC44NDYtMC41MjctMS42MDEtMS4zMTMtMS44NzdMMzQuNDQyLDYuODM3eiI+PC9wYXRoPgo8L3N2Zz4="
+                  src="./image/HK Product LogoSymbol - Color.svg"
                 />
                 <h3 class="projectitem">HK product</h3>
                 <p class="projectitem">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Velit voluptas quia laborum ea, deserunt commodi sed?
+                  HK Product: A logo designed for a shopping business, showcasing a traditional bag silhouette symbolizing the import of goods from foreign countries to the homeland...
                 </p>
 
                 <!-- layer  -->
                 <div class="layer">
                   <h3>HK product</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci veniam cupiditate dolorum impedit? Quidem saepe
-                    maiores, cupiditate ea id quia, earum libero inventore vero
-                    placeat delectus ipsum omnis ipsa quos.
+                    HK Product: A logo designed for a shopping business, showcasing a traditional bag silhouette symbolizing the import of goods from foreign countries to the homeland. The use of purple conveys security and durability, fostering trust in the brand. This logo embodies the mission of delivering premium products to the community
                   </p>
                   <a href="">
                     <img
@@ -282,24 +273,23 @@
             <div class="projectlist">
               <div class="projectCard">
                 <img
-                  class="projectitem"
+                  class="projectitem" id="hospitality"
                   alt="svgImg"
-                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik00Mi40NDQsMTAuMzg1bC04LjgxOS00LjE0QzMzLjYsNi4yMzMsMzMuNTczLDYuMjMsMzMuNTQ3LDYuMjIxYy0wLjAxMi0wLjAwNS0wLjAyMS0wLjAxNC0wLjAzMy0wLjAxOQljLTAuMDI5LTAuMDExLTAuMDU5LTAuMDA5LTAuMDg4LTAuMDE5Yy0wLjAzMS0wLjAwNy0wLjA2Mi0wLjAxNi0wLjA5My0wLjAyYy0wLjg1NC0wLjI0OC0xLjc1OS0wLjAxLTIuMzM5LDAuNjQ4TDE4LjAxNCwxOS43NDgJbC03LjQ3OC01LjA5M2MtMC45NzktMC44MjYtMi4zNzctMC45MzgtMy40ODYtMC4yNzFsLTMuMTU5LDEuOTQ5Yy0wLjAxMiwwLjAwNy0wLjAxOCwwLjAyMS0wLjAyOSwwLjAyOUMzLjMyOSwxNi43MjgsMywxNy4zMjIsMywxOAl2MTZjMCwwLjY3OCwwLjMyOSwxLjI3MiwwLjg2MSwxLjYzN2MwLjAxMiwwLjAwOCwwLjAxNywwLjAyMSwwLjAyOSwwLjAyOWwzLjE2OSwxLjk1NmMwLjQ3OSwwLjI4OCwxLjAxNiwwLjQyOSwxLjU0OCwwLjQyOQljMC42ODgsMCwxLjM3LTAuMjM1LDEuOTE3LTAuNjk1bDcuNDktNS4xMDJsMTIuOTYsMTIuOTE3YzAuNDQ4LDAuNTA4LDEuMDcyLDAuNzgxLDEuNzE3LDAuNzgxYzAuMjc0LDAsMC41NTMtMC4wNSwwLjgyMi0wLjE1MgljMC4wMjEtMC4wMDgsMC4wMzYtMC4wMjMsMC4wNTctMC4wMzJjMC4wMTgtMC4wMDcsMC4wMzctMC4wMDQsMC4wNTUtMC4wMTJsOC43MjgtNC4xMDJDNDMuOTM2LDQxLjA5NSw0NSwzOS41ODIsNDUsMzcuODlWMTQuMTEJQzQ1LDEyLjQxOCw0My45MzYsMTAuOTA1LDQyLjQ0NCwxMC4zODV6IE0yNS42ODgsMjYuMDAxTDMzLDIxLjA0M3Y5LjkxNUwyNS42ODgsMjYuMDAxeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik05LDE5LjEzdjkuNzRsLTMuMiwzLjc0QzUuMjIsMzMuMzcsNCwzMi45Niw0LDMyVjE2YzAtMC45NiwxLjIyLTEuMzcsMS44LTAuNjFMOSwxOS4xM3oiPjwvcGF0aD48cGF0aCBkPSJNNS4wMjUsMzQuMDA4Yy0wLjIxOSwwLTAuNDQzLTAuMDM2LTAuNjYzLTAuMTFDMy41MzQsMzMuNjE3LDMsMzIuODczLDMsMzJWMTZjMC0wLjg3MywwLjUzNC0xLjYxNywxLjM2Mi0xLjg5NwljMC44MjgtMC4yNzksMS43MDQtMC4wMTIsMi4yMzIsMC42ODFsMy4xNjUsMy42OTZDOS45MTUsMTguNjYxLDEwLDE4Ljg5MiwxMCwxOS4xM3Y5Ljc0YzAsMC4yMzgtMC4wODUsMC40NjktMC4yNCwwLjY1bC0zLjIsMy43NAlDNi4xOTcsMzMuNzM3LDUuNjI5LDM0LjAwOCw1LjAyNSwzNC4wMDh6IE01LjA0LDE2LjA0TDUsMzJsMy0zLjV2LTkuMDAxTDUuMDQsMTYuMDR6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQuNDE2LDMyLjgxNWwzLjE1OSwxLjk1YzAuNzMzLDAuNDQsMS42NjQsMC4zNjUsMi4zMTgtMC4xODVMMzQsMTYuOTM4VjYuMzUzCWMwLTEuMTk4LTEuNDgyLTEuNzU4LTIuMjc1LTAuODZMNC40MTYsMzIuODE1eiI+PC9wYXRoPjxwYXRoIGQ9Ik04LjYxOSwzNi4wNTRjLTAuNTM0LDAtMS4wNzUtMC4xNDItMS41Ni0wLjQzMmwtMy4xNjktMS45NTZjLTAuMjYtMC4xNi0wLjQzMy0wLjQzMS0wLjQ2OC0wLjczNHMwLjA2OS0wLjYwNiwwLjI4Ni0wLjgyMwlMMzEuMDE4LDQuNzg2YzAuNTk2LTAuNjgsMS41OTEtMC45MjcsMi40OTYtMC41ODRDMzQuNDE3LDQuNTQzLDM1LDUuMzg4LDM1LDYuMzUzdjEwLjU4NmMwLDAuMzE5LTAuMTUyLDAuNjE5LTAuNDA5LDAuODA3CUwxMC40ODMsMzUuMzg3QzkuOTY0LDM1LjgyNiw5LjI5OCwzNi4wNTQsOC42MTksMzYuMDU0eiBNNi4wMTcsMzIuNjI4bDIuMDg0LDEuMjg2YzAuMzU0LDAuMjEzLDAuODIsMC4xNzYsMS4xNDgtMC4wOTlMMzMsMTYuNDMyCVY2LjM1M2MwLTAuMTcxLTAuMTA1LTAuMjQ3LTAuMTkzLTAuMjhjLTAuMDg5LTAuMDMzLTAuMjE4LTAuMDQ3LTAuMzMyLDAuMDgzTDYuMDE3LDMyLjYyOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNC40MTYsMTUuMTg1bDMuMTU5LTEuOTVjMC43MzMtMC40NCwxLjY2NC0wLjM2NSwyLjMxOCwwLjE4NUwzNCwzMS4wNjN2MTAuNTg1CWMwLDEuMTk4LTEuNDgyLDEuNzU4LTIuMjc1LDAuODZMNC40MTYsMTUuMTg1eiI+PC9wYXRoPjxwYXRoIGQ9Ik0zMi42OTEsNDMuOTUxYy0wLjY0NSwwLTEuMjY5LTAuMjczLTEuNzE3LTAuNzgxTDMuNzA5LDE1Ljg5MmMtMC4yMTctMC4yMTctMC4zMjEtMC41Mi0wLjI4Ni0wLjgyMwlzMC4yMDgtMC41NzQsMC40NjgtMC43MzRsMy4xNTktMS45NDljMS4xMDktMC42NjcsMi41MDctMC41NTUsMy40ODYsMC4yNzFsMjQuMDU1LDE3LjYwMkMzNC44NDgsMzAuNDQ1LDM1LDMwLjc0NCwzNSwzMS4wNjN2MTAuNTg1CWMwLDAuOTY1LTAuNTgzLDEuODEtMS40ODYsMi4xNUMzMy4yNDQsNDMuOTAxLDMyLjk2Niw0My45NTEsMzIuNjkxLDQzLjk1MXogTTYuMDE3LDE1LjM3MmwyNi40MTUsMjYuNDI5CWMwLjE1OCwwLjE3NiwwLjI4OSwwLjE2MywwLjM3NSwwLjEyOEMzMi44OTUsNDEuODk2LDMzLDQxLjgxOSwzMyw0MS42NDhWMzEuNTcxTDkuMzAyLDE0LjIyN2MtMC4zOC0wLjMxNS0wLjg0NS0wLjM1NC0xLjIxMS0wLjEzNAlMNi4wMTcsMTUuMzcyeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik00NCwxMi4xMXYyMy43OGMwLDEuMjctMC43OSwyLjQtMS45OCwyLjgybC04LjgyLDQuMTRMMzQsMzJjMCwwLDAtMTEuNSwwLTE2CWMwLTUtMC44LTEwLjg1LTAuOC0xMC44NWw4LjgyLDQuMTRDNDMuMjEsOS43MSw0NCwxMC44NCw0NCwxMi4xMXoiPjwvcGF0aD48cGF0aCBkPSJNMzMuMiw0My44NWMtMC4yMTQsMC0wLjQyNy0wLjA2OC0wLjYwNC0wLjIwMmMtMC4yOTYtMC4yMjUtMC40NDMtMC41OTQtMC4zODMtMC45NkMzMi4yMjIsNDIuNjQsMzMsMzcuODQxLDMzLDMyVjE2CWMwLTUuODUxLTAuNzc4LTEwLjY0LTAuNzg2LTEwLjY4N2MtMC4wNjEtMC4zNjcsMC4wODctMC43MzYsMC4zODMtMC45NjFjMC4yOTctMC4yMjUsMC42OTItMC4yNjUsMS4wMjgtMC4xMDdsOC44MTksNC4xNAlDNDMuOTM2LDguOTA1LDQ1LDEwLjQxOCw0NSwxMi4xMVYzNS44OWMwLDEuNjkyLTEuMDY0LDMuMjA1LTIuNjQ3LDMuNzY0bC04LjcyOCw0LjEwMkMzMy40OSw0My44MTgsMzMuMzQ1LDQzLjg1LDMzLjIsNDMuODV6IE0zNC40NDIsNi44MzdDMzQuNjgxLDguODA0LDM1LDEyLjE1MywzNSwxNnYxNmMwLDMuODQ2LTAuMzE5LDcuMTk1LTAuNTU4LDkuMTYybDcuMTUyLTMuMzU3QzQyLjQ3MywzNy40OSw0MywzNi43MzUsNDMsMzUuODkJVjEyLjExYzAtMC44NDYtMC41MjctMS42MDEtMS4zMTMtMS44NzdMMzQuNDQyLDYuODM3eiI+PC9wYXRoPgo8L3N2Zz4="
+                  src="./image/HOSPITALityhospitalitylogo.svg"
                 />
                 <h3 class="projectitem">Hospitality</h3>
                 <p class="projectitem">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Velit voluptas quia laborum ea, deserunt commodi sed?
+                  The Online Appointment website for Hospitals is a modernized approach to hospital appointment
+                  scheduling that addresses the challenges inherent in traditional booking systems...
                 </p>
 
                 <!-- layer  -->
                 <div class="layer">
                   <h3>Hospitality</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci veniam cupiditate dolorum impedit? Quidem saepe
-                    maiores, cupiditate ea id quia, earum libero inventore vero
-                    placeat delectus ipsum omnis ipsa quos.
+                    The Online Appointment website for Hospitals is a modernized approach to hospital appointment
+                    scheduling that addresses the challenges inherent in traditional booking systems. It provides a
+                    streamlined and efficient platform for both patients and healthcare personnel by ensuring Calendar-Based Scheduling,  Automated Reminders,  Patient Dashboard,  Staff Interface, Appointment Limitation and more.
                   </p>
                   <a href="">
                     <img
@@ -328,28 +318,28 @@
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nO2WMUpDQRCGFxHLtLYRrDyDIJYWEpj1VWnsvIJdbpALeAOb+GYkWBi0UyOksfIKgoUoM4kIK/sgRCQI+oK7s9kP/v7/3v92WWMyPyNlscFkB4zwxgSX0ms1jUaY7EDIumm8jNEIE0y+iUyMRuSLxDRGIxKjiJAdzisWKEPXbzf+KuJiCqO9cFc7q+pFpAp0ExGxTvDgKAkRRniXc9hVLyLVKvAsZbGpX4R8YJRFJPgKNp1fi5M57JjE9QvdJX6iINyFLi+LeDQuNTLnaxqNSGgR1283BOE+grPgqiDc/l6i01lhAgpenmou6e/m0KWlroiUcBi6sNQVYSy2Ge1YtYj0Wk1BeApdtr4IwSh00YWIMNrHJETGZ8UWI7yoF/GM0e4xwYd6EQ8jHCch4mGCkyRE3GmxJgTX6kU8r+X+OqN9CF1eZrmpimVqsrBfJDRZJDbyIrGRF4mNvEhs5EVi478X+QT23spFDl7itQAAAABJRU5ErkJggg=="
               />
               <h3>adresse</h3>
-              <p>bejaia</p>
+              <p>Bejaia-Algeria</p>
             </div>
             <div class="contactitem">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC10lEQVR4nO2ZSWtUQRCAK+4gelFcURBPLkcJ3hRR8GCWV5WnaESFaH6C4MmjeFNP6j8wEDOva5wQCUQDQYiCRnBDQRE8GROyTPVEhZaegAmSIdMvzEsF80HfZuB9VHfX0gDLLLN4lBJqskyDwjRuDT4vJtFhWEq4F+2rhfGuZXKzlzCNFjneCUsBl2vcIIyFfyX+yhh6BNop5hp3COObShIzkWm5AFqZSBq2iqEP80mUl8GRye5oO2jDdcRrrMGBqiRmtlgC2hDGayESs7ZYK2jCGvqSRsQyDU/m422gBTE4mVLEn5dO0IIwfkwtUj4veAY0YA12LkiE8T1owOaxfYEiAhqY6Iy2COPvBcg8Ay0IY2/6iCjK9KXpSjfFQadX7vr1FaAF56BOGIeCZZLoBGhDEjodtqXIgEacgzprsL/6aGAbaGUqoQNi8GeVWX3EFpr3glasoZtVR8XgS9dzfj1oxBVOrvUfGJAQe/1/QCOlXLxfmIoBh7/L9R1ZBRqxTFfCcgre9xcGaETmmKbMkyBvgdbRkGV8EpZf8LbKyExMDyY+BW+zjnglaENMvNsyfQ2MTM71XVwH2pji6KA1+CNQpmeuPOOjZRO85EexYuiXML3zJVJmMkWO68uz4DCZodkVgE2iY5XylDCyHxRmImPzeFwMlUJkyuVMgm1iKF/F74fF4LnM+pdgmcAljLlMJpqW6WjoNguXoVE/U6i5TDFHhyzj91rK2OlE2y1dTbtqXvpbpm81l+Hy+0x9TWVsEu8JTZop1yBkMVYK6jBTbTEcg6yeKMTQvZrJGByALLGm5XJgP+OqWaWETkHWlPLN+0I6TTv/zXUHFrVtZrpR9UCDK0p0q+hAy1e0oacpD/hrV2jdCFrwzVaRo5agwYaht74fAo14oZLBBmF67Et4W/mG6h83ZzfDUmDsYfMmXxVbxgf+wcg/AwrTZ2G86tvsxf6+Zf5b/gDFhGmOL8iVvwAAAABJRU5ErkJggg=="
               />
               <h3>Contact Number</h3>
-              <p>+213 type number</p>
+              <p>+213 658385270</p>
             </div>
             <div class="contactitem" id="mailImg">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAG70lEQVR4nO1aaYwUVRB+iLeiomI8Ahhv4xW8463xTHR3p2o7yqEkSjDGxPv6oYL+ATQSxSOaEC9MiBN0Z+o1iwYRVDwgGyMqIPECFS8Edped92a52tRMzzL9pnume2Z2ZnfZL+lf3fX6VXV1HV89IQYxiEHsDkgnrJO1hJmaYLpubTpe7C7opLGHK8JZimCrlujwpSSsFAMdTuv1+yiCh5XEzTnF8wywXQxkpAluUoQ/mYrvMgCuFgMRKWmdrwk+DVK85yKIi4EE1dI4Ukt8WxHuLKk8ewDBk2IgYHNL4yEc1RWBDqN47krJWEz0Zzhtk/fSNkzWEv+JonjuSks4UfRXaBuuVhK+L0dxNwMoJ24NFf0NqQSeqyUsKaJcgTdkYgLBXCMAton+hJS0jlGErykJOwIU/0/Z+Kgm+Mrn3lQl4REjBb4h+gOcDycc4CqgAly5W0l4wQ2E7/ikurmOI4ZwdjDkHhR9Gc6UKXso2XybJvjLP4Vl3DqubTiOn8/U9gXK4ydcCWbuS/jauHet6OMBbkWRAmaZIuuSnueTcIePgVa12+OG830OdqYHdS2IHSX6GtJ206mK0C4S4H5jr2CXzsloCdcpwm3e52CDTlon9KxLcIphwI2iLyGVaDjaDXDbA/7zLRwHnMUT982X607iaWaTw186lYxd6FlfxpoNAy0RfQEO3bg/R25F0BHwn29jw2x5L3aEKcsurCWsM5Tf4VfdsfGMdV8UdQ9wdrOlCdcGFiqEC7tl7HRf+bh1YEFQy1Z29/o9ryXO8/4CzXeKekEnY1f5bT7vK65ME94QJO8GtISP3KtBMopwjefZJFws6kJFEcSLBLj1XNeXKk/ZfX28xQ6S47iRH1s4fXLNIGqFjvebDuNCpTBS91RkKc7hTqJhWKm1uHjxSYltXCwFyXRR7GwjAK4TtYATt/bmf1IRtAe4+g72CGXD6NDsjpEllMRfu2zryGJySuJE01tEb8JxxBAOcErCL8H/OS7qSuCYKA2QIujyKgId3fOtM0rJagnPGh4zvWIlg5Cy8QItcWmRyL6GjSMiQLc0Hqsl/m0ov5WrxTDyinCBR9bGCaLaUDaMLkpFEWzkfM+/RZR1nYXWwYrwO8OIO9mtw66hCf7Il++WsbNEtdBujxuepaIw7f/FYWuuUyuH7VESPvJZd2qk/RmFVa45qg4VRfBvkXwuy528ZNpXgreCWtuw6yiJlxoGWCUqRTobjX8sks+X84sreYdZupqtbfh14C4jBb5b9qZSFDuPNxGoOOHvZqdWDpRsvsWMJfmtbbS14GUj+zwRfUMtjSOLUVFBnVo5UDZcVhhPvK1tFJjDkRRBU6QIrAlnBHHtbqf2SmerNUJUAUxRa4JNZpXIU55y1+Ts49l3GEM6cWuoJrw7Y/ngfD6fyQtRRSjC581KMdIX8yFRTWNyF1pSUBPMKRLZV+hk7BrRC+D/0+OuMnZfJesxU2QG53BlLPk3La4VF3FkZQanks35vjtu7ackzuZWuVLlGYrwIePjvR5KUEv4rEiK29XISPwyw7WXGaB6G5rgTaMoeyCUYGerNUJLfKZYM+NT8X2rCZ6O0uD0NrhNrpgG70rgGFbMrMdLeAcb7rkwnVpvIcsaYaqqNHh6ftNJ7uhpWZj5O09s6uURvFezlqjqCzpbrRFc9XG9n3/oyCdozhZ1QMpGMH7Rxb16+kpLvN01hrdoItgU1AJz1E/Z1jmcr6u9Jz75YdQts0Qt4CQahplcfVrGGgo3aI1ShD/nzfg+59THZXc19lFAvtaSBteFFNRc8xlF8HhAhVkVY3Dz5FnXxotErdBlsLDM5ZmsLStZOrW6xiC8n2mxsO/P0OB5xRyv47SOP0jUEsr8Akkcm7vX/oF1aNAMsERWWcldJ8eNkqnbm//XilpDS3zKyAaUu8fGMO6tznxlgmURjPGDljiNOQqTf1AEt9aUBvcDd4pmTZAjNAqaLcIZOTkl4aWonpEZmRPO0jZcme1kCw5KTBP1gCL8xojEk7gd9eERr3A5wIITHi45sjT8LwMbNOGfXuM3j6+TAeAxw9UX8dzeCJAd2cPMXi4gFzxz9Xt2vJYrvPwZ6KCrO4ln1skA1qj8kpk7yGy76/k1Enxaq2DjBJuCUhefKWBiNjOHkNhZIpNUhwYvF1rCF4bCHl7RHHe51/qgcwF+xuADERxX/I7DcxoV9USa8J5IqY6rQ/fUV1Rwye2eF3otc0SeoK2qU6BywJPbsAGM83xv9AV1h/Ifb5nXcm6qxECEpuZJJdz+4zCHI/ot2u1xw7kQClA+WY2BSp+H4kFpYYSe4yy+fE+xO0AR3GxUbDMrnSH2KzjZeQPz9PP4XG+99zOIQQxCmPgfKDlEhZ84TmcAAAAASUVORK5CYII="
               />
               <h3>Email Adresse</h3>
-              <p>inesmelinajldql</p>
+              <p>inesmeliani2003@gmail.com</p>
             </div>
             <div class="contactitem">
               <img
                 src="data:image/png;base64,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"
               />
               <h3>website</h3>
-              <p>aqllik dinna</p>
+              <p>you're there</p>
             </div>
           </div>
         </div>
